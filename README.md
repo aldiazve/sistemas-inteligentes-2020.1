@@ -2,10 +2,10 @@
 
 # Repositorios a descargar:
 
-[x] https://github.com/jgomezpe/uniltiranyu [fuente]
-[x] https://github.com/jgomezpe/aplikigo
-[x] https://github.com/jgomezpe/fwew
-[x] https://github.com/jgomezpe/hazarda
-[x] https://github.com/jgomezpe/kitee
-[x] https://github.com/jgomezpe/matematiko
-[x] https://github.com/jgomezpe/speco
+* https://github.com/jgomezpe/uniltiranyu [fuente]
+* https://github.com/jgomezpe/aplikigo
+* https://github.com/jgomezpe/fwew
+* https://github.com/jgomezpe/hazarda
+* https://github.com/jgomezpe/kitee
+* https://github.com/jgomezpe/matematiko
+* https://github.com/jgomezpe/speco
