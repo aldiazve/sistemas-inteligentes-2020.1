@@ -43,28 +43,3 @@ La siguiente lista muesta el número de diapositiva que cada uno debe hacer para
 | Torres Forero, Jhonatan               |  22  46  70  94        |
 | Velasquez Vargas, Diego Armando       |  23  47  71  95        |
 | Zambrano Penagos, Guiselle Tatiana    |  24  48  72  96        |
-
-gdaguirrea@unal.edu.co
-gfalbarracinr@unal.edu.co
-dangulos@unal.edu.co
-afarangurens@unal.edu.co
-aabarretoc@unal.edu.co
-aldiazve@unal.edu.co
-admedinaco@unal.edu.co
-mmedranom@unal.edu.co
-ofmendez@unal.edu.co
-damorenor@unal.edu.co
-leotalorac@unal.edu.co
-npardoa@unal.edu.co
-daeperdomocr@unal.edu.co
-dacperezce@unal.edu.co
-fpieschaconr@unal.edu.co
-dfricoh@unal.edu.co
-nirodriguezsa@unal.edu.co
-saruizh@unal.edu.co
-rasalgadol@unal.edu.co
-idsolanov@unal.edu.co
-mbsuarezg@unal.edu.co
-jtorresf@unal.edu.co
-arvelasquezva@unal.edu.co
-gtzambranop@unal.edu.co
