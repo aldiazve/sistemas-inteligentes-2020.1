@@ -1,0 +1,14 @@
+%% Paginas 60 Cap 3 #############################################################################################
+\begin{frame}{Depth-limited search}{Cap 3 p 60}
+\begin{right}
+
+= la busqueda de DFS con un limite de profundidad $l$
+
+i.e., nodo a la profundidad $l$ no tienen sucesores
+
+Implementacion recursiva:
+
+\includegraphics[scale = 0.5]{images/dfs_limit.PNG}
+
+\end{right}
+\end{frame}
