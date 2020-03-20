@@ -43,3 +43,57 @@ La siguiente lista muesta el número de diapositiva que cada uno debe hacer para
 | Torres Forero, Jhonatan               |  22  46  70  94        |
 | Velasquez Vargas, Diego Armando       |  23  47  71  95        |
 | Zambrano Penagos, Guiselle Tatiana    |  24  48  72  96        |
+
+
+### Formato de diapositiva:
+
+Por favor subir un archivo .tex cuyo contenido sea el código LaTex de esa diapositiva únicamente, el nombre del archivo debe ser el número de diapositiva, ejemplo:
+
+6.tex:
+```tex
+\begin{frame}{El agente aspiradora}
+
+\begin{center}
+\def\arraystretch{1}
+ \begin{tabular}{||l|r||} 
+ \hline
+ Secuencia de percepciones   & Acción \\
+ \hline
+ \hline
+ \hspace{1em} '[A, Limpio]' \hspace{1em} & \hspace{1em} Derecha \\
+ \hspace{1em} '[A, Sucio]' \hspace{1em} & \hspace{1em} Aspirar \\
+ \hspace{1em} '[B, Limpio]' \hspace{1em} & \hspace{1em} Izquierda \\
+ \hspace{1em} '[B, Sucio]' \hspace{1em} & \hspace{1em} Aspirar \\
+ \hspace{1em} '[A, Limpio]', '[A, Limpio]' \hspace{1em} & \hspace{1em} Derecha \\
+ \hspace{1em} '[A, Limpio]', '[A, Sucio]' \hspace{1em} & \hspace{1em} Aspirar \\ 
+ ... & ... \\ [1ex]
+ \hline
+ \end{tabular}
+\end{center}
+\setlength{\arrayrulewidth}{0.3mm}
+\begin{tabular}{|l|} 
+ \hline
+    La \textbf{función} Reflex-Vacuum-Agent(\textit{[ubicación,estado]}) \textbf{retorna} una acción \\
+    \\
+    \hspace{1em} \textbf{sí} \textit{estado = Sucio} \textbf{entonces retorna} \textit{Aspirar} \\
+    \hspace{1em} \textbf{entonces sí} \textit{ubicación = A} \textbf{entonces retorna} \textit{Derecha} \\
+    \hspace{1em} \textbf{entonces sí} \textit{ubicación = B} \textbf{entonces retorna} \textit{Izquierda} \\
+ \hline
+\end{tabular}
+¿Qué es la función Derecha? \newline
+¿Puede ser implementada en un pequeño programa de agente?
+\end{frame}
+```
+
+Este archivo corresponde a la diapositiva 6 del capítulo dos, por ende debe estar ubicado en la siguiente ruta:
+
+```
+/diapositivas/chapter2/6.tex
+```
+
+En caso de que la diapositiva contenga imágenes embebidas, estas deben ir en la misma carpeta y su nombre debe usar como prefijo el número de la diapositiva:
+
+```
+/diapositivas/chapter2/6_image_name.png
+```
+
