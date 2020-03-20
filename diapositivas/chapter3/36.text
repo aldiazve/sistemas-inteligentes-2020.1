@@ -1,0 +1,12 @@
+%% Paginas 36 Cap 3 #############################################################################################
+\begin{frame}{Breadth-first search}{Cap 3 p 36}
+\begin{right}
+
+Ir al nodo no expandido mas profundo
+Implementacion:
+$fringe$ es una cola FIFO, i.e., nuevos sucesores fan al final
+
+\includegraphics[scale = 0.5]{images/tree_bfs_p36.PNG}
+
+\end{right}
+\end{frame}
