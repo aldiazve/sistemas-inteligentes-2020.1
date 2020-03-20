@@ -1,0 +1,32 @@
+\begin{frame}{El Agente Aspiradora}
+
+\begin{center}
+\def\arraystretch{1}
+ \begin{tabular}{||l|r||} 
+ \hline
+ Secuencia de percepciones   & Acción \\
+ \hline
+ \hline
+ \hspace{1em} [A, Limpio] \hspace{1em} & \hspace{1em} Derecha \\
+ \hspace{1em} [A, Sucio] \hspace{1em} & \hspace{1em} Aspirar \\
+ \hspace{1em} [B, Limpio] \hspace{1em} & \hspace{1em} Izquierda \\
+ \hspace{1em} [B, Sucio] \hspace{1em} & \hspace{1em} Aspirar \\
+ \hspace{1em} [A, Limpio], [A, Limpio] \hspace{1em} & \hspace{1em} Derecha \\
+ \hspace{1em} [A, Limpio], [A, Sucio] \hspace{1em} & \hspace{1em} Aspirar \\ 
+ ... & ... \\ [1ex]
+ \hline
+ \end{tabular}
+\end{center}
+\setlength{\arrayrulewidth}{0.3mm}
+\begin{tabular}{|l|} 
+ \hline
+    La \textbf{función} Reflex-Vacuum-Agent(\textit{[ubicación,estado]}) \textbf{retorna} una acción \\
+    \\
+    \hspace{1em} \textbf{sí} \textit{estado = Sucio} \textbf{entonces retorna} \textit{Aspirar} \\
+    \hspace{1em} \textbf{entonces sí} \textit{ubicación = A} \textbf{entonces retorna} \textit{Derecha} \\
+    \hspace{1em} \textbf{entonces sí} \textit{ubicación = B} \textbf{entonces retorna} \textit{Izquierda} \\
+ \hline
+\end{tabular}
+¿Qué es la función Derecha? \newline
+¿Puede ser implementada en un pequeño programa de agente?
+\end{frame}
