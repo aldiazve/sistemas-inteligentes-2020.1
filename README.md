@@ -60,12 +60,12 @@ Por favor subir un archivo .tex cuyo contenido sea el código LaTex de esa diapo
  Secuencia de percepciones   & Acción \\
  \hline
  \hline
- \hspace{1em} '[A, Limpio]' \hspace{1em} & \hspace{1em} Derecha \\
- \hspace{1em} '[A, Sucio]' \hspace{1em} & \hspace{1em} Aspirar \\
- \hspace{1em} '[B, Limpio]' \hspace{1em} & \hspace{1em} Izquierda \\
- \hspace{1em} '[B, Sucio]' \hspace{1em} & \hspace{1em} Aspirar \\
- \hspace{1em} '[A, Limpio]', '[A, Limpio]' \hspace{1em} & \hspace{1em} Derecha \\
- \hspace{1em} '[A, Limpio]', '[A, Sucio]' \hspace{1em} & \hspace{1em} Aspirar \\ 
+ \hspace{1em} [A, Limpio] \hspace{1em} & \hspace{1em} Derecha \\
+ \hspace{1em} [A, Sucio] \hspace{1em} & \hspace{1em} Aspirar \\
+ \hspace{1em} [B, Limpio] \hspace{1em} & \hspace{1em} Izquierda \\
+ \hspace{1em} [B, Sucio] \hspace{1em} & \hspace{1em} Aspirar \\
+ \hspace{1em} [A, Limpio], [A, Limpio] \hspace{1em} & \hspace{1em} Derecha \\
+ \hspace{1em} [A, Limpio], [A, Sucio] \hspace{1em} & \hspace{1em} Aspirar \\ 
  ... & ... \\ [1ex]
  \hline
  \end{tabular}
