@@ -1,0 +1,25 @@
+\definecolor{Red}{RGB}{150,0,0}
+\definecolor{Purple}{RGB}{166,115,255}
+\definecolor{Green}{RGB}{0,100,0}
+\definecolor{Blue}{RGB}{0,12,230}
+
+    % Pagina 16%
+    \begin{frame}{Búsqueda A*}
+        \small{
+            \textcolor{Green}{Idea}: evitar expandir caminos que de por si ya son costosos.
+            \break\break\
+            Funcion de evaluacion \textcolor{Purple}{$f(n)=g(n)+h(n)$}.
+            \break\break
+            \textcolor{Purple}{$g(n)$} = costo acumulado para llegar a \textcolor{Purple}{$n$} \\
+            \textcolor{Purple}{$h(n)$} = costo estimado a la meta desde \textcolor{Purple}{$n$} \\
+            \textcolor{Purple}{$f(n)$} = costo estimado de la ruta a la meta, a través de      \textcolor{Purple}{$n$} 
+            \break\break
+            La búsqueda A* utiliza heurísticas \textbf{\textcolor{Blue}{admisibles}}\\
+            es decir, \textcolor{Purple}{$h(n) \leq h^*(n)$}, donde \textcolor{Purple}{$h^*(n)$} es el costo \textbf{\textcolor{Red}{real}} de \textcolor{Purple}{$n$}.\\
+            (Tambien requiere \textcolor{Purple}{$h(n) \geq 0$}, entonces \textcolor{Purple}{$h(G)=0$} para cualquier meta \textcolor{Purple}{$G$})
+            \break\break
+            Por ejemplo, \textcolor{Purple}{$h_{SLD}(n)$} nunca sobreestima la distancia real del camino
+            \break\break
+            \textbf{\textcolor{Green}{Teorema}}: La búsqueda A* es óptima
+        }\break\break\break
+    \end{frame}
