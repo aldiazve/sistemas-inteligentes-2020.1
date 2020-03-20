@@ -2,6 +2,8 @@
 
 ### Repositorios a descargar:
 
+A continuación todos los repositorios que serán utilizados en clase, recuerden que deben integrar el .jar de cada uno en un proyecto de eclipse (netbeans también se puede [o en su caso cualquier ambiente de desarrollo que usen]). La única excepción es uniltiranyu, para ese repo hay que descargar todo el código fuente.
+
 * https://github.com/jgomezpe/uniltiranyu [fuente]
 * https://github.com/jgomezpe/aplikigo
 * https://github.com/jgomezpe/fwew
@@ -11,6 +13,8 @@
 * https://github.com/jgomezpe/speco
 
 ### Orden de las diapositivas:
+
+La siguiente lista muesta el número de diapositiva que cada uno debe hacer para cada capítulo, es decir, si soy el primero de la lista, debo hacer las diapositivas 1, 25, 49 y 73 de todos los capítulos. Hay que traducir los capítulos 2, 3, 4, 5, 6, 7, 8 y 9.
 
 
 | Estudiante                            | Número de diapositiva  |
@@ -39,3 +43,28 @@
 | Torres Forero, Jhonatan               |  22  46  70  94        |
 | Velasquez Vargas, Diego Armando       |  23  47  71  95        |
 | Zambrano Penagos, Guiselle Tatiana    |  24  48  72  96        |
+
+gdaguirrea@unal.edu.co
+gfalbarracinr@unal.edu.co
+dangulos@unal.edu.co
+afarangurens@unal.edu.co
+aabarretoc@unal.edu.co
+aldiazve@unal.edu.co
+admedinaco@unal.edu.co
+mmedranom@unal.edu.co
+ofmendez@unal.edu.co
+damorenor@unal.edu.co
+leotalorac@unal.edu.co
+npardoa@unal.edu.co
+daeperdomocr@unal.edu.co
+dacperezce@unal.edu.co
+fpieschaconr@unal.edu.co
+dfricoh@unal.edu.co
+nirodriguezsa@unal.edu.co
+saruizh@unal.edu.co
+rasalgadol@unal.edu.co
+idsolanov@unal.edu.co
+mbsuarezg@unal.edu.co
+jtorresf@unal.edu.co
+arvelasquezva@unal.edu.co
+gtzambranop@unal.edu.co
