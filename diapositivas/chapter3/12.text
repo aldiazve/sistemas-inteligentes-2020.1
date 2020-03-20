@@ -1,0 +1,26 @@
+%% Paginas 12 Cap 3 #############################################################################################
+\begin{frame}{Formulación de problema de un Solo Estado}{Cap 3 p 12}
+\begin{right}
+
+Un problema es definido por cuatro items:
+
+- Estado inicial e.g., "at Arad"
+
+- Función Sucesora $S(x)$ = conjunto de pares de action-estado.
+
+    e.g., $S(Arad)=$ \{  \left\langle Arad  \longrightarrow Zerind, Zerind \right\rangle,...\}
+    
+- Prueba del objetivo, puede ser
+
+explicito, e.g., $x$ = "at Bucharest"
+
+implicito, e.g., $NoDirt(x)$
+
+- Camino de costo(aditivo)
+
+e.g., suma de distancias, numbero de acciones ejecutadas $c(x,a,y)$ es el costo del paso, asumido para ser $ \geq 0$
+
+Una solucion es una secuencia de acciones lideradas desde el estado final al estado objetivo.
+
+\end{right}
+\end{frame}
