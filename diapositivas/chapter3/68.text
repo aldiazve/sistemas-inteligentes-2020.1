@@ -1,0 +1,9 @@
+%CAPITULO 3
+%pagina 68
+\begin{frame}{Propiedades de la Búsqueda de Profundización Iterativa}
+
+        \\\textcolor{purple}{Completo??} SI
+        \\\textcolor{purple}{Tiempo??} \textcolor{pink}{$(d+ 1)b^0+db^1+ (d-1)b^2 + ... + b^d= O(b^d)$}
+        \\\textcolor{purple}{Espacio??}
+    
+\end{frame}

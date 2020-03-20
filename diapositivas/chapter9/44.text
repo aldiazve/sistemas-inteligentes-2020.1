@@ -1,0 +1,17 @@
+%CAPITULO 9
+%pagina 44
+\begin{frame}{Conversion a CNF}
+Todos los que aman a todos los animales son amados por alguien
+\\\textcolor{purple}{$\forall x $ $[\forall y$ $ Animal(y) \Rightarrow Ama(x,y)]\Rightarrow[\exists y$ $ Ama(y,x)]$}
+\begin{itemize}
+    \begin{enumerate}
+        \item Eliminar bicondicionales e implicaciones
+        \\\textcolor{purple}{$\forall x $ $[\neg\forall y$ $ \neg Animal(y) \vee Ama(x,y)]\vee[\exists y$ $ Ama(y,x)]$}
+        \item Mover \textcolor{purple}{$\neg$} hacia adentro: \textcolor{purple}{$\neg\forall x,p \equiv \exists x \neg p,$ \qquad $\neg\exists x,p \equiv \forall x \neg p:$}
+        \\\textcolor{purple}{$\forall x$ $[\exists y \neg(\neg $ $Animal(y)\vee Ama(x,y))]\vee[\exists y $ $Ama(y,x)]$}
+        \\\textcolor{purple}{$\forall x$ $[\exists y \neg\neg $ $Animal(y)\wedge \neg Ama(x,y)]\vee [\exists y $ $Ama(y,x)]$}
+        \\\textcolor{purple}{$\forall x$ $[\exists y  $ $Animal(y)\wedge \neg Ama(x,y)]\vee [\exists y $ $Ama(y,x)]$}
+    \end{enumerate}
+\end{itemize}
+    
+\end{frame}

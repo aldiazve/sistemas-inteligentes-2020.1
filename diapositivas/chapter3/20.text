@@ -1,0 +1,16 @@
+
+%CAPITULO 3
+%pagina 20 
+\begin{frame}{Ejemplo: El "8-Puzzle"}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.7]{images/20_image_cap3pag20.PNG}
+    \begin{flushleft}
+        \\ \textcolor{purple}{Estados??} ubicaciones enteras de casillas (ignorar posiciones intermedias)
+        \\\textcolor{purple}{Acciones??}
+        \\\textcolor{purple}{Prueba de Objetivo??}
+        \\\textcolor{purple}{Costo del Camino??}
+    \end{flushleft}
+\end{figure}{}
+    
+\end{frame}

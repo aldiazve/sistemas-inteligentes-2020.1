@@ -1,0 +1,13 @@
+%CAPITULO 6
+%pagina 20
+\begin{frame}{Propiedades de \alpha - \beta}
+Podar \textcolor{red}{NO} afecta el resultado final
+\\ Un buen orden de movimiento mejora la efectividad de la poda
+\\ Con "Ordenamiento Perfecto", La complejidad en tiempo es: $O(b^\frac{m}{2})$
+\\ \quad \Rightarrow 
+\textcolor{red}{\large{Duplica}}\quad la \quad profundidad \quad solucionable
+\newline
+\\Un ejemplo simple del valor del razonamiento sobre qué cálculos son relevantes (una forma de metarazonamiento)
+\\Desafortunadamente , $35^{50}$ sigue siendo imposible!!
+    
+\end{frame}

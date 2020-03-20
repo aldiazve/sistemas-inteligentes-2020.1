@@ -1,0 +1,17 @@
+%CAPITULO 7
+%pagina 68
+\begin{frame}{Conversion a CNF}
+\textcolor{purple}{$B_{1,1} \Leftrightarrow (P_{1,2}\vee P_{2,1})$}
+\begin{itemize}
+    \begin{enumerate}
+    \item Eliminar \textcolor{purple}{\Leftrightarrow} \textcolor{black}{reemplazando}\quad \textcolor{purple}{\alpha \Leftrightarrow \beta} \quad\textcolor{black}{con}\quad \textcolor{purple}{$(\alpha \Rightarrow \beta) \wedge (\beta \Rightarrow \alpha)$}.
+    \\\textcolor{purple}{$(B_{1,1}\Rightarrow(P_{1,2} \vee P_{2,1}))\wedge((P_{1,2} \vee P_{2,1})\Rightarrow B_{1,1})$}
+    \item Eliminar \textcolor{purple}{\Rightarrow}\textcolor{black}{reemplazando }\quad\textcolor{purple}{\alpha \Rightarrow \beta} \quad\textcolor{black}{con }\quad\textcolor{purple}{$\neg\alpha\vee\beta$}
+    \\\textcolor{purple}{$(\neg B_{1,1} \vee P_{1,2} \vee P_{2,1})\wedge (\neg(P_{1,2}\vee P_{2,1})\vee B_{1,1})$}
+    \item Mover $\textcolor{purple}{\neg}$ hacia a dentro usando las reglas de Morgan y la doble negacion
+    \\\textcolor{purple}{$(\neg B_{1,1} \vee P_{1,2} \vee P_{2,1})\wedge((\neg P_{1,2}\wedge P_{2,1})\vee B_{1,1})$}
+    \item Aplicar la ley distributiva (\textcolor{purple}{$\vee$} sobre \textcolor{purple}{$\wedge$}) y aplanar:
+    \\\textcolor{purple}{$(\neg B_{1,1} \vee P_{1,2} \vee P_{2,1})\wedge(\neg P_{1,2} \vee B_{1,1})\wedge(\neg P_{2,1}\vee B_{1,1})$}
+    \end{enumerate}
+\end{itemize}
+\end{frame}

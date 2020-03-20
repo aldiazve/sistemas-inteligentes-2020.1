@@ -1,0 +1,12 @@
+
+%CAPITULO 5
+%pagina 20
+
+\begin{frame}{Heurística de grado}
+    Desempate entre las variables MRV
+    \\\large{Heurística de grado:}
+    \\\qquad Elija la variable con mas restricciones de las variables restantes
+    \\
+    \centering
+    \includegraphics[scale=0.8]{images/20_image_cap5pag20.PNG}
+\end{frame}

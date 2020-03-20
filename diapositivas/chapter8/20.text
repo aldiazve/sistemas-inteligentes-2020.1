@@ -1,0 +1,9 @@
+%CAPITULO 8
+%pagina 20
+\begin{frame}{Diversión con oraciones}
+    Los Hermanos son Parientes
+    \\\textcolor{purple}{$\forall x, y$  $  Hermano(x,y) \Rightarrow Pariente(x,y)$}
+    \\"Pariente" es simetrico
+    \\\textcolor{purple}{$\forall x,y$ $Pariente(x,y) \Leftrightarrow Pariente(y,x)$}
+    \\La madre de uno es el pariente femenino de uno
+\end{frame}

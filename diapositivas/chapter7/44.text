@@ -1,0 +1,23 @@
+%CAPITULO 7
+%pagina 44
+\include{pythonlisting}
+\begin{frame}{Algoritmo de Encadenamiento hacia Adelante}
+\scriptsize{
+\textcolor{blue}{\textbf{funcion}} \textcolor{red}{PL-FC-Entails?} (\textcolor{green}{KB, q}) \textcolor{blue}{retorna} \textcolor{green}{falso} o \textcolor{green}{verdadero}
+\\\quad \textcolor{blue}{\textbf{entradas:}} \textcolor{green}{KB,}\tiny la base de conocimiento, un conjunto de cláusulas proposicionales de Horn,\scriptsize \\\qquad\qquad\qquad\textcolor{green}{q,} \tiny la consulta, un símbolo de propuesta.
+\scriptsize
+\\\quad\textcolor{blue}{\textbf{variables locales:}} \textcolor{green}{contador,}\tiny una tabla una tabla, indexada por cláusula, inicialmente el número de premisas, \\\qquad\qquad\qquad\qquad\qquad\qquad\scriptsize \textcolor{green}{inferidos,} \tiny una tabla, indexada por símbolo, cada entrada inicialmente falsa,
+\scriptsize\\\qquad\qquad\qquad\qquad\quad\textcolor{green}{agenda,} \tiny una lista de símbolos, inicialmente los símbolos conocidos en \textcolor{green}{KB}
+\\\scriptsize
+\\\textcolor{blue}{Mientras} \textcolor{green}{agenda} no esta vacia \textcolor{blue}{haga}
+\\\qquad\textcolor{green}{p}\leftarrow Pop(\textcolor{green}{agenda})
+\\\qquad\textcolor{blue}{a menos que} \textcolor{green}{inferidos}[\textcolor{green}{p}] \textcolor{blue}{haga}
+\\\qquad\quad \textcolor{green}{inferidos}[\textcolor{green}{p}]\leftarrow \textcolor{green}{verdadero}
+\\\qquad\quad \textcolor{blue}{para cada} Clausula Horn \textcolor{green}{c} en cuya premisa \textcolor{green}{p} aparece \textcolor{blue}{haga}
+\\\qquad\qquad decremente \textcolor{green}{contador}[\textcolor{green}{c}]
+\\\qquad\qquad\textcolor{blue}{si} \textcolor{green}{contador}[\textcolor{green}{c}] = 0 \textcolor{blue}{entonces haga} 
+\\\qquad\qquad\qquad\textcolor{blue}{si} Cabeza[\textcolor{green}{c}] = \textcolor{green}{q} \textcolor{blue}{entonces retorne} \textcolor{green}{verdadero}
+\\\qquad\qquad\qquad Push(Cabeza[\textcolor{green}{c}],\textcolor{green}{agenda})
+\\\textcolor{blue}{retorne} \textcolor{green}{falso}
+}
+\end{frame}
