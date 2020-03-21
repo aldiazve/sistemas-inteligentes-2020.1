@@ -1,0 +1,28 @@
+%CAPITULO 3
+%pagina 71
+\begin{frame}{Summary of algorithms}
+\begin{table}[htbp]
+\resizebox{12cm}{!} {
+\begin{tabular}{|l|c|c|c|c|c|} \hline
+\multicolumn{1}{|p{1.5cm}|}{\centering %
+Criterio} & \multicolumn{1}{p{4cm}|}%
+{\centering Búsqueda \\
+en anchura} & \multicolumn{1}{p{4cm}|}%
+{\centering Búsqueda \\
+de costo uniforme} & \multicolumn{1}{p{4cm}|}%
+{\centering Búsqueda \\
+en profundidad} & \multicolumn{1}{p{4cm}|}%
+{\centering Búsqueda \\
+en profundidad Limitada}
+ & \multicolumn{1}{p{4cm}|}%
+{\centering Búsqueda \\
+en profundidad iterativa}
+\tabularnewline \hline
+Completo? & Si* & Si* & No & Si, Si $ l \geq d $ & Si \\
+Tiempo & b^{d+1} & b^ {\lceil {\frac{C}{E}} \rceil} & b^{m} & b^{l} & b^{d}\\
+Espacio & b^{d+1} & b^ {\lceil {\frac{C}{E}} \rceil} & bm & bl & bd\\
+Óptimo? & Si* & Si* & No & No & Si* \\  \hline
+\end{tabular}
+}
+\end{table}
+\end{frame}
