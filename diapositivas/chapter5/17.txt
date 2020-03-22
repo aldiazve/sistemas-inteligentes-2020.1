@@ -1,0 +1,4 @@
+    \begin{frame}{Ejemplo de Backtracking(Retroceso) }
+        Limite = 2
+        \begin{figure}\includegraphics[width =123mm]{17img.png}\end{figure}
+    \end{frame}
