@@ -1,0 +1,35 @@
+\begin{frame}{Reducción cont.}
+    
+    Reclamación: una nueva oración\textcolor{purple}{$\textsuperscript{*}$} está implicada por una nueva KB si está implicada por una KB original
+    \bigskip
+    
+    Reclamación: cada KB FOL se puede proponer para preservar la vinculación
+    \bigskip
+    
+    Idea: proposicionalizar KB y consultar, aplicar resolución, devolver resultado
+    \bigskip
+    
+    Problema: con los símbolos de función, hay infinitos términos básicos,
+    \quad p.ej., {\fontfamily{qcr}\selectfont
+    \textcolor{purple}{Padre (Padre (Padre (John)))}}
+    \bigskip
+    
+    Theorem: Herbrand (1930). If a sentence \textcolor{purple}{$\alpha$} is entailed by an FOL KB,
+    \quad está implicado por un subconjunto \textcolor{magenta}{\textbf{finito}} de la KB proposicional
+    \bigskip
+    
+    Idea: Para \textcolor{purple}{\(n\)} = \textcolor{purple}{0} a \textcolor{purple}{$\infty$} hacer
+    
+    \quad crear una KB proposicional instanciando con términos de profundidad-\textcolor{purple}{\(n\)}
+    
+    \quad a ver si \textcolor{purple}{$\alpha$} está implicado por este KB
+    \bigskip
+    
+    Problema: funciona si \textcolor{purple}{$\alpha$} está implicado, se repite si \textcolor{purple}{$\alpha$} no está implicado
+    \bigskip
+    
+    Teorema: Turing (1936), Church (1936), la implicación en FOL es \textcolor{blue}{semidecidible}
+
+    
+    
+\end{frame}
