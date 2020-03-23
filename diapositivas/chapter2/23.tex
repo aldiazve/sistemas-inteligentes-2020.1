@@ -1,0 +1,22 @@
+\usepackage{algpseudocode}
+
+\begin{frame}{Agente Reflejo Limpiadora}
+%Pagina 23%
+\textbf{función} Agente Reflejo Limpiadora( \textit{[Ubicación,Estado]}) \textbf{retorna} una acción \break
+\textbf{estatica} \textit{Ultima\_A, Ultimo\_B}, numeros, inicialmente \infty \break
+\textbf{Si } estado = succio \textbf{ entonces}...\break
+\begin{algorithmic}
+\textbf{defun} programa-agente-de-limpiadora-reflejo-con-estado ()\break
+ \State{\textbf{let} ((ultima\_A infinito) (last\_B infinito))}\break
+ \State \#(lambda (percepcion)\break
+(\textbf{let} ((ubicación (primera percepcion)) (estado (segunda percepcion)))\break
+(incf ultima-A) (incf ultima-B)\break
+\If{(eq estado 'sucio)}\break
+\If {(eq ubicación 'A) (setq Ultima\_A 0) (setq \_Ultima-B 0))
+} Suck\break
+\ElsIf {(eq ubicación 'A)}\break
+\If{(> Ultima-B 3) 'Derecha'} NoOp)\break
+\ElsIf {(eq ubicación 'B)} \break
+\If{(> Ultima-A 3) 'Izquierda} 'NoOp)\break
+\end{algorithmic}
+\end{frame}
