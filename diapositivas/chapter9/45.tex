@@ -1,0 +1,10 @@
+%Capitulo 9, presentación 45
+\definecolor{DarkPurple}{RGB}{100,0,110}
+\begin{frame}{Ejemplo de Base de Conocimiento condt.}
+... es un crimen para un estadounidense vender armas a naciones hostiles:
+\\\textcolor{DarkPurple}{$estadounidense(x)\wedge Arma(y) \wedge Vender(x,y,z)\wedge Hostil(z)\Rightarrow Criminal(x)$}
+\\Nono ... tiene algunso misiles, es decir, $\exists x Tiene(Nono,x) \wedge Misil(x) :$ \textcolor{DarkPurple}{$Tiene(Nono,M_1)$} y \textcolor{DarkPurple}{$Misil(M_1)$}
+\\...el coronel West le vendió todos sus misiles   
+\textcolor{DarkPurple}{$\forall x Misil(x) \land Owns(Nono,x) \Rightarrow Vender(West,x,Nono)$} 
+\\Los misiles son armas:  
+\end{frame}
