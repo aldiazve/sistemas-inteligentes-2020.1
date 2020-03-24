@@ -1,0 +1,25 @@
+%Capitulo 2, presentación 21
+\begin{frame}[fragile]{Ejemplo}
+ \begin{center}
+  \begin{tabular}{|l|} 
+   \hline
+   	La \textbf{función} Reflex-Vacuum-Agent(\textit{[ubicación,estado]}) \textbf{retorna} una acción \\
+    \hspace{1em} \textbf{sí} \textit{estado = Sucio} \textbf{entonces retorna} \textit{Aspirar} \\
+    \hspace{1em} \textbf{entonces sí} \textit{ubicación = A} \textbf{entonces retorna} \textit{Derecha} \\
+    \hspace{1em} \textbf{entonces sí} \textit{ubicación = B} \textbf{entonces retorna} \textit{Izquierda} \\
+   \hline
+  \end{tabular}
+  {\scriptsize 
+	\begin{verbatim}
+	(setq joe (hacer-agente :nombre 'joe :cuerpo (hacer-cuerpo-agente)
+                                 :programa (hacer-programa-reflex-vacuum-agent))
+    (defun hacer-programa-reflex-vacuum-agent()
+      #'(lambda (percepción)
+          (sea ((locación (primera percepción)) (estado (segunda percepción)))
+            (cond ((eq estado 'sucio) 'Aspirar)
+                  ((eq ubicación 'A) 'Derecha)
+                  ((eq ubicación 'B) 'Izquierda)))))
+  \end{verbatim}
+  }
+ \end{center}
+\end{frame}
