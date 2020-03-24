@@ -1,0 +1,20 @@
+%Capitulo 6, presentación 21
+\definecolor{Pink}{RGB}{255,0,131}
+\definecolor{DarkPurple}{RGB}{100,0,110}
+\begin{frame}{Límites de los recursos}
+	Enfoque estándar:
+	\begin{itemize}
+  		\item Usa el \textsc{Test-Cierre} en lugar de \textsc{Test-Terminal} 
+  		\\
+  		\quad como por ejemplo, límite de profundidad (quizás agregar \textcolor{DarkPurple}				{búsqueda \\ \quad de reposo})
+	    \item Usa \textsc{Eval} en lugar de \textsc{Utilidad}
+	    \\
+	    \quad es decir,usar una \textcolor{DarkPurple}{función de evalución}, la cual estima la \\
+	    \quad conveniencia de la posición
+	\end{itemize}
+	Supongamos que tenemos \textcolor{Pink}{100} segundos, explorar \textcolor{Pink}{$10^4$} nodos/segundo
+	\begin{itemize}
+		\item[$\Rightarrow$] \textcolor{Pink}{$10^6$} nodos por movimiento {$\approx$} \textcolor{Pink}{$35^{8/2}$} 
+		\item[$\Rightarrow$] {$\alpha - \beta$} alcanza una profundidad de 8 {$\Rightarrow$} programa bastante bueno
+	\end{itemize}
+\end{frame}
