@@ -1,0 +1,75 @@
+%Capitulo 7, presentación 69
+\definecolor{Red}{RGB}{100,10,10}
+\definecolor{DarkGreen}{RGB}{10,100,10}
+\definecolor{DarkBlue}{RGB}{10,10,100}
+\definecolor{DarkPurple}{RGB}{100,0,110}
+\begin{frame}{Algoritmo de resolución}
+	Prueba por contradicción, es decir, demostrar que no se satisface \textcolor{DarkPurple}{$KB \land \neg\alpha$}
+	\begin{center}
+		\begin{tabular}{|l|}
+		\hline
+		{\footnotesize
+			\textcolor{DarkBlue}{función} \textcolor{Red}{\textsc{Resolución-PL}}								(\textcolor{DarkGreen}{KB,{$\alpha$}}) \textcolor{DarkBlue}{retorna} 								\textcolor{DarkGreen}{\textit{verdadero}} o \textcolor{DarkGreen}{\emph{falso}}
+		}
+		\\
+		{\footnotesize
+			\qquad 
+			\textcolor{DarkBlue}{entradas}: \textcolor{DarkGreen}{KB}, el conocimiento base, 					una	sentencia en lógica proposicional 
+		}
+		\\	
+		{\footnotesize
+			\qquad
+			\quad\quad\quad\quad\quad
+			\textcolor{DarkGreen}{$\alpha$}, la consulta,una sentencia en lógica proposicional 
+		}
+		\\
+		{\footnotesize
+			\qquad
+			\textcolor{DarkGreen}{\textit{clausulas}} {$\leftarrow$} el conjunto de clausulas en la 				representación CNF de \textcolor{DarkGreen}{KB}{$ \land \neg\alpha$}
+		}
+		\\
+		{\footnotesize
+			\qquad
+			\textcolor{DarkGreen}{\textit{nuevo}} {$\leftarrow$} {$\{\}$}
+		}
+		\\
+		{\footnotesize
+			\qquad
+			\textcolor{DarkBlue}{búcle hacer}	
+		}
+    	\\
+    	{\footnotesize
+			\qquad\qquad
+			\textcolor{DarkBlue}{por cada} {$C_i, C_j$} \textcolor{DarkBlue}{en} 								\textcolor{DarkGreen}{clausulas} \textcolor{DarkBlue}{hacer}	
+		}
+    	\\
+    	{\footnotesize
+			\qquad\qquad\qquad
+			\textcolor{DarkGreen}{\textit{solventes}} {$\leftarrow$} \textsc{Resolver-PL}({$C_i, C_j				$})
+		}
+    	\\
+    	{\footnotesize
+			\qquad\qquad\qquad
+			\textcolor{DarkBlue}{si} \textcolor{DarkGreen}{solventes} contienen la clausula vacía 				\textcolor{DarkBlue}{entonces retornar} \textcolor{DarkGreen}{\textit{verdadero}}		
+		}
+    	\\
+    	{\footnotesize
+			\qquad\qquad\qquad
+			\textcolor{DarkGreen}{\textit{nuevo}} {$\leftarrow$} \textcolor{DarkGreen}							{\textit{nuevo}} {$\cup$} \textcolor{DarkGreen}{\textit{solventes}}
+		}
+    	\\
+    	{\footnotesize
+			\qquad\qquad
+			\textcolor{DarkBlue}{si} \textcolor{DarkGreen}{\textit{nuevo}} {$\subseteq$}						\textcolor{DarkGreen}{\textit{clausulas}} \textcolor{DarkBlue}{entonces retornar} 					\textcolor{DarkGreen}{\textit{falso}}		
+		}
+    	\\
+    	{\footnotesize
+			\qquad\qquad
+			\textcolor{DarkGreen}{\textit{clausulas}} {$\leftarrow$} \textcolor{DarkGreen}						{\textit{clausulas}} {$\cup$} \textcolor{DarkGreen}{\textit{nuevo}}
+		}
+    	\\
+   		\hline
+   		
+  		\end{tabular}
+	\end{center}
+\end{frame}
