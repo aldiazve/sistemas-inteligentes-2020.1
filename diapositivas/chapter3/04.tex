@@ -1,0 +1,60 @@
+% -------------------------- Chapter 3 - Slide 4 -------------------------- % 
+
+\begin{frame}{Agente de resolución de problemas}
+Forma restringida de un agente general:
+
+\begin{theorem}[Pseudocódigo]
+
+\begin{listing}
+{\scriptsize 
+\textcolor{darkblue}{función} \textcolor{darkred}{AGENTE-SOLUCIONADOR-DE-PROBLEMAS-SIMPLE}(\textcolor{darkgreen}{percepción}) 
+\textcolor{darkblue}{retorna} una acción
+\\* \quad\quad
+\textcolor{darkblue}{estático}: 
+\textcolor{darkgreen}{sec}, una secuencia de acciones, inicialmente vacía
+\\* \quad\quad\quad\quad\quad\quad
+\textcolor{darkgreen}{estado}, una descripción del estado actual del ambiente
+\\* \quad\quad\quad\quad\quad\quad
+\textcolor{darkgreen}{objetivo}, un objetivo, inicialmente nulo
+		  problema, una formulación de un problema
+\\* \quad\quad
+\textcolor{darkgreen}{estado}$\ \leftarrow $ {ACTUALIZAR-ESTADO}(
+\textcolor{darkgreen}{estado}, 
+\textcolor{darkgreen}{percepción})
+\\*\quad\quad
+\textcolor{darkblue}{si} 
+\textcolor{darkgreen}{sec} está vacío 
+\textcolor{darkblue}{entonces} 
+\\*\quad\quad\quad\quad
+\textcolor{darkgreen}{objetivo}$\ \leftarrow $ Formular-Estado(
+\textcolor{darkgreen}{estado}, 
+\textcolor{darkgreen}{percepción})
+\\*\quad\quad\quad\quad
+\textcolor{darkgreen}{problema} $\ \leftarrow $ Formular-Problema(
+\textcolor{darkgreen}{estado}, 
+\textcolor{darkgreen}{objetivo})\\*
+\quad\quad\quad\quad
+\textcolor{darkgreen}{sec} $\ \leftarrow $ Buscar(
+\textcolor{darkgreen}{problema})\\*
+\quad\quad
+\textcolor{darkgreen}{acción} $\ \leftarrow $ Recomendación(
+\textcolor{darkgreen}{sec}, 
+\textcolor{darkgreen}{estado})\\*
+\quad\quad
+\textcolor{darkgreen}{sec} $\ \leftarrow $Recordatorio(
+\textcolor{darkgreen}{sec}, 
+\textcolor{darkgreen}{estado})\\*
+\quad\quad
+\textcolor{darkblue}{retorna} acción
+}
+\end{listing}
+
+\end{theorem}
+
+{\tiny 
+\quad\quad\quad Nota: Esto es resolución de problemas de manera "\textcolor{darkgreen}{offline}"; solución ejecutada con "ojos cerrados".
+\\*\quad\quad\quad
+La solución de problemas 
+"\textcolor{darkgreen}{online}" requiere actuar con conocimiento incompleto.}
+
+\end{frame}
