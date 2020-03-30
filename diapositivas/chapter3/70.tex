@@ -1,0 +1,21 @@
+\definecolor{Pink}{RGB}{255,0,131}
+\definecolor{Purple}{RGB}{110,0,200}
+\begin{frame}{Propiedades de la Búsqueda A Profundidad Iterativa}
+	\small{	
+            \textcolor{Pink}{\underline{¿Completo?}}\, Si
+            \\
+            \textcolor{Pink}{\underline{¿Tiempo?}}\;\textcolor{Purple}{$(d+ 1)b^0+db^1+ (d-1)b^2 + ... + b^d= O(b^d)$}
+            \\
+            \textcolor{Pink}{\underline{¿Espacio?}}\;\textcolor{Purple}{$O(bd)$}
+            \\
+            \textcolor{Pink}{\underline{¿Optimo?}}\, Sí, si el paso cuesta 1 
+            \\
+            Puede ser modificado para explorar un árbol con costo uniforme
+            \\
+            La comparasión númerica para \textcolor{Purple}{$b = 10$} y \textcolor{Purple}{$a = 5$}, la solución a la ultima hoja derecha
+            \\
+            \textcolor{Purple}{$N(IDS) = 50 + 400 + 3000 + 20000 + 100000 = 123450$}
+            \\
+            \textcolor{Purple}{$N(BFS) = 10 + 100 + 1000 + 10000 + 100000 + 999990 = 1111100$}
+    }
+\end{frame}
