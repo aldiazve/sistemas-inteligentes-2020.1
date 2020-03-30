@@ -1,0 +1,27 @@
+%chap 7 pag 42
+\definecolor{Purple}{RGB}{153,0,153}
+\definecolor{Green}{RGB}{0,100,0}
+\definecolor{DarkRed}{RGB}{128,0,0}
+
+\begin{frame}{Encadenamiento hacia adelante y hacia atrás}
+    \textcolor{blue}{Cláusula de Horn} (restringida)\\
+    
+    \hspace{0.5cm}KB = \textcolor{DarkRed}{Conjunción} de las
+    \textcolor{DarkRed}{cláusulas deHorn}\\
+    
+    Cláusula de Horn =
+    \begin{itemize}
+        \item Símbolo de proposición; o
+        \item (Conjunción de símbolos) \textcolor{Purple}{$\Rightarrow$} símbolo
+    \end{itemize}{}
+    \textcolor{blue}{Modus Ponens}(para la cláusula de Horn): Completa para KBs de
+    Horn.
+    
+    \begin{equation*}
+        \textcolor{Purple}{\frac{\alpha_1, \cdots, \alpha_n \hspace{0.5cm} \alpha_1
+        \wedge \cdots \wedge \alpha_n \Rightarrow \beta}{\beta}}
+    \end{equation*}{}
+    
+    Se puede usar con \textcolor{blue}{encadenamiento hacia adelante} o \textcolor{blue}{hacia atrás}.
+    Estos algoritmos son muy naturales y se ejecutan en tiempo \textcolor{DarkRed}{lineal}.
+\end{frame}{}
