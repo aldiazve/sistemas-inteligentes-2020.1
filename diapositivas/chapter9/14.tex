@@ -1,0 +1,16 @@
+%capitulo 9 pagina14%
+    \begin{frame}{Unificación}
+        Podemos obtener la inferencia inmediatamente si podemos encontrar una sustitución \textcolor{Purple}{$\theta$} tal que \textcolor{Purple}{King(x)} y \textcolor{Purple}{Greedy(x)} coincide con \textcolor{Purple}{King(John)} y \textcolor{Purple}{Greedy(y)}\\
+        \textcolor{Purple}{$\theta= \{ x/John,y/john\}$} funciona\\
+        \textcolor{Purple}{Unifica$(\alpha,\beta) = \theta$} si \textcolor{Purple}{$\alpha\theta=\beta\theta$}\\
+        \begin{table}[]
+        \begin{tabular}{l|l|l}
+        \textcolor{Purple}{$p$}               & \textcolor{Purple}{$q$}                    & \textcolor{Green}{$\theta$}                       \\ \hline
+        \textcolor{Purple}{$Conoce(John, x)$} & \textcolor{Purple}{$Conoce(John, Jane)$}   & \textcolor{Green}{$\{ x/Jane \}$}                 \\
+        \textcolor{Purple}{$Conoce(John, x)$} & \textcolor{Purple}{$Conoce(y, OJ)$}        & \textcolor{Green}{$\{ y/John, x/Mother(John) \}$} \\
+        \textcolor{Purple}{$Conoce(John, x)$} & \textcolor{Purple}{$Conoce(y, Mother(y))$} & \textcolor{Green}{$\{  \}$}                       \\
+        \textcolor{Purple}{$Conoce(John, x)$} & \textcolor{Purple}{$Conoce(x, OJ)$}        & \textcolor{Green}{$fallo$}                       
+        \end{tabular}
+        \end{table}
+        \textcolor{Blue}{Estandarizar aparte} elimina la superposición de variables, por ejemplo, \textcolor{Purple}{$Knows(z_{17},OJ)$}
+    \end{frame}
