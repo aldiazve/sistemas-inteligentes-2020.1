@@ -1,0 +1,31 @@
+    %capitulo 7 pagina 38%
+    \begin{frame}{Inferencia por enumeración}
+    La primera enumeración en profundidad de todos los modelos es sólida y completa\\
+        \begin{table}[]
+        \resizebox{9cm}{!} {
+        \begin{tabular}{|l|}
+        \hline
+        \multicolumn{1}{|c|}{\begin{tabular}[c]{@{}l@{}}
+            \textcolor{Blue}{función:} \textcolor{Red}{TT\_Entails}(\textcolor{Green}{$KB,\alpha$}) \textcolor{Blue}{retorna} \textcolor{Green}{verdadero} o \textcolor{Green}{falso}\\
+            \quad\textcolor{Blue}{entradas:}\textcolor{Green}{$KB$}, el concocimiento base, una sentencia en lógica proposicional\\
+            \qquad\qquad\quad\textcolor{Green}{$\alpha$}, la interrogante, una sentencia en lógica proposicional\\
+            \quad\textcolor{Green}{$simbolos$}$\leftarrow$una lista de los simbolos de proposición en \textcolor{Green}{$KB$} y \textcolor{Green}{$\alpha$}\\
+            \quad\textcolor{Blue}{retorna} TT-Check-All(\textcolor{Green}{$KB,\alpha,simbolos$},[])
+        \end{tabular}} \\ \hline
+        \begin{tabular}[c]{@{}l@{}}
+            \textcolor{Blue}{función:} \textcolor{Red}{TT-Check-All}(\textcolor{Green}{$KB,\alpha,simbolos,modelo$}) \textcolor{Blue}{retorna} \textcolor{Green}{verdadero} o \textcolor{Green}{falso}\\
+            \quad\textcolor{Blue}{si} ¿Vacio?(\textcolor{Green}{$simbolos$} \textcolor{Blue}{entonces}\\
+            \qquad\textcolor{Blue}{si} ¿PL-Verdadero?(\textcolor{Green}{$KB,modelo$}) \textcolor{Blue}{entonces retorne} ¿PL-True? (\textcolor{Green}{$\alpha,modelo$})\\
+            \qquad\textcolor{Blue}{en otro caso retorne} \textcolor{Green}{verdadero}\\
+            \quad\textcolor{Blue}{en otro caso hacer}\\
+            \qquad P$\leftarrow$Primero(\textcolor{Green}{$simbolos$});           \textcolor{Green}{rest}$\leftarrow$Rest(\textcolor{Green}{$simbolos$})\\
+            \qquad\textcolor{Blue}{retorna} TT-Chekc-All(\textcolor{Green}{$KB,\alpha,rest$},Extend(P,\textcolor{Green}{$verdadero,modelo$})) \textcolor{Blue}{y}\\
+            \qquad\qquad\qquad TT-Chekc-All(\textcolor{Green}{$KB,\alpha,rest$},Extend(P,\textcolor{Green}{$falso,modelo$}))
+        \end{tabular}\\ \hline
+        \end{tabular}
+        }
+        \end{table}
+    \textcolor{Pink}{$O(2^n)$} para \textcolor{Pink}{$n$} simbolos; el problema es
+    \textcolor{Red}{co-NP-completo}
+        
+    \end{frame}
