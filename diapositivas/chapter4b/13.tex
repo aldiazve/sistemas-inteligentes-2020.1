@@ -1,0 +1,27 @@
+
+%Capitulo 4b Pagina 13
+\definecolor{blue(pigment)}{rgb}{0.2, 0.2, 0.6}
+\begin{frame}{Espacio de estados continuo}
+    \begin{right}
+    
+    Suponga que queremos ubicar 3 aeropuertos en Rumania:\newline
+    \hspace*{1em}– Espacio de estados 6-D definido por \textcolor{Purple}{\((x1, y2), (x2, y2), (x3, y3)\)}\newline
+    \hspace*{1em}– Función objetivo \textcolor{Purple}{$f(x1, y2, x2, y2, x3, y3) $} $ = $
+    \hspace*{2em}suma de las distancias al cuadrado desde cada ciudad al aeropuerto más cercano
+    
+    Los métodos de \textcolor{blue(pigment)}{discretización} convierten el espacio continuo en espacio discreto,
+    ej. el \textcolor{blue(pigment)}{gradiente empírico} considera un cambio de \textcolor{Purple}{$\pm \delta$} 
+    en cada coordenada.\newline
+    Cálculo de métodos de \textcolor{blue(pigment)}{Gradiente}:
+    \end{right}
+     \textcolor{Purple}{\[
+      	\bigtriangledown f = (\frac{\delta f}{ \delta x_{1}},\frac{\delta f}{ \delta y_{1}},\frac{\delta f}{ \delta x_{2}},\frac{\delta f}{ \delta y_{2}},\frac{\delta f}{ \delta x_{3}},\frac{\delta f}{ \delta y_{3}})
+    \]}
+    \begin{right}
+    
+    para incrementar/reducir \textcolor{Purple}{f}, ej., por \textcolor{Purple}{$x \leftarrow x +  \alpha \bigtriangledown f(x)$}\newline
+    En ocaciones se puede resolver \textcolor{Purple}{$\bigtriangledown f(x) = 0$} exactamente (ej. con una ciudad)
+\textcolor{blue(pigment)}{Newton–Raphson} (1664, 1690) itera \textcolor{Purple}{$x \leftarrow x - H_{f}^{-1}(x) \bigtriangledown f(x)$} 
+para resolver \textcolor{Purple}{$\bigtriangledown f(x) = 0$}, donde \textcolor{Purple}{$H_{ij} =  \delta ^{2} f/ \delta x_{i} \delta x_{j}$}
+    \end{right}
+\end{frame}
