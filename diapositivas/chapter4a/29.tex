@@ -1,0 +1,14 @@
+%Chap 4a pag 29
+\definecolor{Purple}{RGB}{153,0,153}
+\definecolor{Pink}{RGB}{255,0,131}
+\begin{frame}{Propiedades de A*}
+    \textcolor{Pink}{¿Completo?}\, Si, a menos que haya infinitos nodos con \textcolor{Purple}{$f <= f(G)$}
+    \\
+    \textcolor{Pink}{¿Tiempo?}\, Exponencial en [error relativo en \textcolor{Purple}{$h$} X tamaño de la solución.]\\
+    \textcolor{Pink}{¿Espacio?}\, Mantiene todos los nodos en la memoria\\
+    \textcolor{Pink}{¿Óptimo?}\, Sí, no puede expandir
+    \textcolor{Purple}{$f_{i+1}$} hasta \textcolor{Purple}{$f_{i}$} este terminado.\\
+    A* expande todos los nodos con \textcolor{Purple}{$f(n) < C*$}\\
+    A* expande algunos nodos con \textcolor{Purple}{$f(n) = C*$}\\
+    A* no expande nodos con \textcolor{Purple}{$f(n) > C*$}
+\end{frame}
